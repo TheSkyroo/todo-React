@@ -1,100 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
 .container {
-  background: #ffffff;
-  width: 350px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 25px 45px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+  color: #ffffff;
 }
 
+
 .header {
+  font-size: 2rem;
+  font-weight: 600;
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
 }
+
 
 input {
   width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: none;
   outline: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 input:focus {
-  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
 }
 
+
 button {
-  margin-top: 10px;
-  padding: 10px;
   width: 100%;
+  padding: 14px;
+  border-radius: 16px;
   border: none;
-  border-radius: 8px;
-  background: #667eea;
-  color: white;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
-  
+  color: #fff;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
-  background: #5a67d8;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(41, 128, 185, 0.45);
 }
+
 
 .listHeading {
-  margin: 15px 0 10px;
-  font-weight: 600;
-  color: #444;
+  margin: 20px 0 12px;
+  font-size: 0.95rem;
+  opacity: 0.85;
 }
 
-.listTodos {
-  background: #637599;
-  color: #000;
-  padding: 10px;
-  border-radius: 8px;
-  flex: 1;
-}
 
 p {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 12px;
+  margin-bottom: 10px;
 }
+
+.listTodos {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 0.9rem;
+}
+
 
 p button {
   width: auto;
-  padding: 8px 12px;
-  background: #48bb78;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
 }
 
 p button:hover {
-  background: #38a169;
+  box-shadow: 0 12px 24px rgba(86, 171, 47, 0.45);
 }
 
+
 .container > button:last-child {
-  background: #e53e3e;
+  margin-top: 18px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
 }
 
 .container > button:last-child:hover {
-  background: #c53030;
+  box-shadow: 0 15px 30px rgba(255, 65, 108, 0.5);
 }
