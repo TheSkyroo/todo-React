@@ -107,11 +107,11 @@ p button:hover {
   box-shadow: 0 12px 24px rgba(86, 171, 47, 0.45);
 }
 
-.container > button:last-child {
+.container>button:last-child {
   margin-top: 18px;
   background: linear-gradient(135deg, #ff416c, #ff4b2b);
 }
 
-.container > button:last-child:hover {
+.container>button:last-child:hover {
   box-shadow: 0 15px 30px rgba(255, 65, 108, 0.5);
 }
