@@ -30,7 +30,7 @@ function Todolist() {
           onChange={(e) => setTodo(e.target.value)}
         />
         <button onClick={addTodo}>Add Todo</button>
-        <p className="listHeading">Here are your Tods🔥</p>
+        <p className="listHeading">Here are your Tods</p>
         {listTodo != [] &&
           listTodo.map((todo, i) => {
             return (
